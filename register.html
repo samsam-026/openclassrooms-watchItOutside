@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>W I O | Register</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="./assets/css/custom.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Sameeha Rahman">
+    <meta name="keywords" content="Watch it Outside, Film Festival, Boston, Boston Public Garden">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/home/logo.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="lineup.html">Lineup</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.facebook.com" target="_blank"><i
+                                class="fa fa-facebook"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.twitter.com" target="_blank"><i
+                                class="fa fa-twitter"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="http://www.instagram.com" target="_blank"><i
+                                class="fa fa-instagram"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Full Page Image Header with Vertically Centered Content -->
+    <header class="masthead">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-8 offset-2 text-center masthead-descrip">
+                    <h1 class="font-weight-light">Interested in one of the shows?</h1>
+                    <p class="lead">Fill the form to reserve a spot just for you!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Content -->
+    <section class="py-5">
+        <div class="container">
+            <h1 class="font-weight-light text-center">Reserve your seat</h1> <br>
+            <div class="row">
+                <div class="col-md-8 offset-2">
+                    <div class="row align-items-center">
+                        <div class="col-md-8">
+                            <form>
+                                <div class="form-group">
+                                    <label for="name">Name *</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="date">Date of show *</label>
+                                    <input type="date" id="date" value="2020-08-05" min="2020-08-05" max="2020-08-08"
+                                        class="form-control" id="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="show">Show *</label>
+                                    <select name="show" id="show" class="form-control">
+                                        <option value="s1" selected>1st show</option>
+                                        <option value="s2">2nd show</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                        <label for="numSeats">Number of seats *</label>
+                                        <input type="number" value="1" min="1" max="15" class="form-control" id="numSeats" required>
+                                    </div>
+                                <div class="form-row">
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="reset" id="reset" class="btn btn-secondary"
+                                        style="margin-left: 20px;">Reset</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="card justify-content-center" id="movieCard">
+                                <div class="wrapper">
+                                    <img class="card-img-top img-fluid" id="moviePoster"
+                                        src="./assets/images/shows/FindingNemo.jpeg" alt="Finding Nemo">
+                                </div>
+                                <div class="card-body">
+                                    <h4 class="card-title" id="movieName">Finding Nemo</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="page-footer font-small blue pt-4">
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-md-4 offset-md-2">
+                    <h3 class="font-weight-light">Connect with us on</h3>
+                    <a href="http://www.facebook.com" target="_blank" class="btn-social btn-facebook"><i
+                            class="fa fa-facebook"></i></a>
+                    <a href="http://www.twitter.com" target="_blank" class="btn-social btn-twitter"><i
+                            class="fa fa-twitter"></i></a>
+                    <a href="http://www.instagram.com" target="_blank" class="btn-social btn-instagram"><i
+                            class="fa fa-instagram"></i></a>
+                </div>
+                <div class="col-md-4 other-links">
+                    <h3 class="font-weight-light">Important Links</h3>
+                    <a href="https://www.boston.gov/parks/public-garden">Boston Public Garden <i
+                            class="fa fa-external-link"></i></a><br />
+                    <a href="https://www.boston.com/">Boston News <i class="fa fa-external-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3">
+            © 2019 Copyright: Watch It Outside Events Co.
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/custom.js"></script>
+    <script>
+        var movies = {
+            "2020-08-05": {
+                s1: {
+                    name: "Finding Nemo",
+                    image: "./assets/images/shows/FindingNemo.jpeg"
+                },
+                s2: {
+                    name: "The Addams Family",
+                    image: "./assets/images/shows/theAddamsFamily.jpg"
+                }
+            },
+            "2020-08-06": {
+                s1: {
+                    name: "The Princess Diaries",
+                    image: "./assets/images/shows/ThePrincessDiaries.webp"
+                },
+                s2: {
+                    name: "Men In Black",
+                    image: "./assets/images/shows/MenInBlack.jpg"
+                }
+            },
+            "2020-08-07": {
+                s1: {
+                    name: "Mulan",
+                    image: "./assets/images/shows/Mulan.jpg"
+                },
+                s2: {
+                    name: "Jurassic Park",
+                    image: "./assets/images/shows/JurassicPark.webp"
+                }
+            },
+            "2020-08-08": {
+                s1: {
+                    name: "Sound of Music",
+                    image: "./assets/images/shows/soundOfMusic.jpeg"
+                },
+                s2: {
+                    name: "Toy Story",
+                    image: "./assets/images/shows/ToyStory.jpg"
+                }
+            },
+        }
+
+        var dateValue = "2020-08-05";
+        var selectValue = "s1";
+
+        $('#date').on('change', function () {
+            dateValue = this.value;
+            changeMoviePoster(dateValue, selectValue);
+        })
+
+        $('#show').on('change', function () {
+            selectValue = this.value;
+            changeMoviePoster(dateValue, selectValue);
+        });
+
+        $('#reset').on('click', function () {
+            dateValue = "2020-08-05";
+            selectValue = "s1";
+            changeMoviePoster(dateValue, selectValue);
+        });
+
+        function changeMoviePoster(dateValue, selectValue) {
+            var movie = movies[dateValue][selectValue];
+            var page = $(this);
+            document.getElementById("moviePoster").src = movie.image;
+            document.getElementById("movieName").innerHTML = movie.name;
+            document.getElementById("moviePoster").alt = movie.name;
+        }
+    </script>
+</body>
+
+</html>
