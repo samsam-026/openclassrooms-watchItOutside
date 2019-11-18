@@ -105,7 +105,7 @@
 
     <section class="py-5">
         <div class="container text-center">
-            <h1 class="font-weight-light">Our Lineup</h1> <br>
+            <h1 class="font-weight-light">Our Lineup</h1><br>
             <div class="row align-items-center">
                 <div class="col-md-4">
                     <div class="wrapper">
@@ -135,6 +135,83 @@
         </div>
     </section>
 
+    <section class="py-5">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="font-weight-light">News</h1><br>
+                    <div id="newsCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="col-sm-8 offset-sm-2">
+                                    <div class="card text-left">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Seat Reservation will open in June/July</h5>
+                                            <p class="card-text">We know we still have a long way to go, but to keep you
+                                                informed, we will be opening seat reservation in mid June/early July. So
+                                                keep coming back for updates. We'll keep you posted!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#newsCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#newsCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="font-weight-light">Announcements</h1><br>
+                    <div id="annCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="col-sm-8 offset-sm-2">
+                                    <div class="card text-left">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Show time change</h5>
+                                            <p class="card-text">Nemo is now the first show of the series at 6-9pm on
+                                                the 5th of August 2020, which means that The Princess Diaries has now
+                                                been moved to the 6-9pm slot on the 7th of August 2020.<br>Check our new
+                                                show times <a href="./lineup.html">here<i class="fa fa-link"></i></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="col-sm-8 offset-sm-2">
+                                    <div class="card text-left">
+                                        <div class="card-body">
+                                            <h5 class="card-title">New show for 8th</h5>
+                                            <p class="card-text">Our final show of the series at 9-12am on the 8th of
+                                                August 2020, has now been changed to the children's classic Toy
+                                                Story.<br>Check out all our shows Check our new show times <a
+                                                    href="./lineup.html">here<i class="fa fa-link"></i></a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#annCarousel" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#annCarousel" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 
     <footer class="page-footer font-small blue pt-4">
         <div class="container-fluid">
@@ -150,9 +227,10 @@
                 </div>
                 <div class="col-md-4 other-links">
                     <h3 class="font-weight-light">Important Links</h3>
-                    <a href="https://www.boston.gov/parks/public-garden">Boston Public Garden <i
+                    <a href="https://www.boston.gov/parks/public-garden" target="_blank">Boston Public Garden <i
                             class="fa fa-external-link"></i></a><br />
-                    <a href="https://www.boston.com/">Boston News <i class="fa fa-external-link"></i></a>
+                    <a href="https://www.boston.com/" target="_blank">Boston News <i
+                            class="fa fa-external-link"></i></a>
                 </div>
             </div>
         </div>
@@ -172,6 +250,17 @@
         crossorigin="anonymous"></script>
     <script src="./assets/js/custom.js"></script>
     <script src="./assets/js/countdown.js"></script>
+    <script src="./assets/js/newsSlider.js"></script>
+    <script>
+        $('#newsCarousel').carousel({
+            interval: 4000
+        });
+
+        $('#annCarousel').carousel({
+            interval: 4000
+        });
+    </script>
+
 </body>
 
 </html>

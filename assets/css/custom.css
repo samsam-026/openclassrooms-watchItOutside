@@ -16,11 +16,9 @@ body {
     color: #1F2F46;
 }
 
-.section-about a:hover, .see-all-shows a:hover, #contactDetails a:hover, .section-register a:hover, #countdown, a:hover .time-title, .masthead-descrip h1{
+.section-about a:hover, .see-all-shows a:hover, #contactDetails a:hover, .section-register a:hover, #countdown, a:hover .time-title, .masthead-descrip h1 {
     color: #447356;
 }
-
-
 
 /*movie cards*/
 
@@ -239,3 +237,24 @@ a.btn-social, .btn-social {
     background-color: #80A54F;
     border-color: #80A54F;
 }
+
+/*News carousel*/
+
+.carousel-control-prev, .carousel-control-next {
+    background-color: rgba(31, 47, 70, 0.3);
+}
+
+.carousel-inner > .item {
+    height: 100vh;
+  }
+  
+  .carousel-inner > .item > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    max-height: 800px;
+    width: auto;
+  }
