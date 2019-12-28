@@ -247,11 +247,12 @@
             var modal = $(this);
             modal.find('.modal-title').text(movie);
             modal.find('#trailerEmbed').attr("src", trailer);
-        })
+        });
+        
         $('#trailerModal').on('hide.bs.modal', function (event) {
             var modal = $(this);
             modal.find('#trailerEmbed').attr("src", "");
-        })
+        });
     </script>
 </body>
 

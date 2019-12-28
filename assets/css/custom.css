@@ -102,6 +102,12 @@ a:hover .time-title, .card-text a:hover {
     transition: background-color 1s ease 0s;
 }
 
+/* Solid class attached on scroll past first section */
+
+.navbar.solid {
+    background-color: #447356;
+}
+
 .navbar .navbar-brand img {
     width: 200px;
 }
@@ -128,14 +134,7 @@ a:hover .time-title, .card-text a:hover {
     background-color: #447356;
 }
 
-/* Solid class attached on scroll past first section */
 
-.navbar.solid {
-    background-color: #447356;
-    border: none;
-    color: white;
-    transition: background-color 1s ease 0s;
-}
 
 /*Social Media Buttons*/
 
